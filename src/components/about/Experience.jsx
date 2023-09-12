@@ -3,6 +3,12 @@ import React from "react";
 const experienceContent = [
   {
     year: "    Present",
+    position: "Web Developer",
+    compnayName: "Melfan Tech",
+    details: ``,
+  },
+   {
+    year: "2022-23",
     position: "Websiter Aministrator",
     compnayName: "Jeilutv",
     details: ``,
