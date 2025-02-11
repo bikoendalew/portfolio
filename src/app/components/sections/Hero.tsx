@@ -28,7 +28,7 @@ export default function Hero() {
     ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b  from-gray-900 to-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
