@@ -46,7 +46,7 @@ export default function Skills() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12"
+            className="text-3xl font-bold text-center text-white mb-12"
           >
             Skills
           </motion.h2>
@@ -62,9 +62,9 @@ export default function Skills() {
                 key={category}
                 variants={itemVariants}
                 whileHover={{ scale: 1.02 }}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6"
+                className="bg-gray-800 rounded-lg shadow-md p-6"
               >
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-xl font-semibold text-white mb-4">
                   {category}
                 </h3>
                 <div className="flex flex-wrap gap-2">
