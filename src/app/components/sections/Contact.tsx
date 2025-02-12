@@ -234,7 +234,7 @@ export default function Contact() {
                                         <h3 className="text-lg font-medium text-white">
                                             {info.title}
                                         </h3>
-                                        <p className="mt-1 text-gray-300">
+                                        <p className="mt-1 text-sm text-gray-300">
                                             {info.details}
                                         </p>
                                     </div>

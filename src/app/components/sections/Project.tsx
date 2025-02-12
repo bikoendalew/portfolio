@@ -174,12 +174,12 @@ export default function Projects() {
         </div>
 
         {/* Project Category Tabs */}
-        <div className="mt-12 flex justify-center space-x-4">
+        <div className="mt-12 flex justify-center space-x-2">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => handleTabChange(tab.id)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150
+              className={`px-2 py-2 rounded-lg text-sm font-medium transition-colors duration-150
                 ${activeTab === tab.id
                   ? 'bg-blue-600 text-white'
                   : 'text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
