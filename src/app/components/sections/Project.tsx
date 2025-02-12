@@ -165,7 +165,7 @@ export default function Projects() {
     <section id="projects" className="py-20 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
+          <h2 className="text-3xl font-bold text-blue-400 sm:text-4xl">
             My Projects
           </h2>
           <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 dark:text-gray-300 sm:mt-4">
@@ -174,21 +174,21 @@ export default function Projects() {
         </div>
 
         {/* Project Category Tabs */}
-        <div className="mt-12 flex justify-center space-x-2">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => handleTabChange(tab.id)}
-              className={`px-2 py-2 rounded-lg text-sm font-medium transition-colors duration-150
-                ${activeTab === tab.id
-                  ? 'bg-blue-600 text-white'
-                  : 'text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
-                }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
+        <div className="mt-12 flex flex-wrap md:flex-nowrap justify-center gap-2">
+  {tabs.map((tab) => (
+    <button
+      key={tab.id}
+      onClick={() => handleTabChange(tab.id)}
+      className={`w-[calc(50%-0.25rem)] md:w-auto px-2 py-2 rounded-lg text-sm font-medium transition-colors duration-150
+        ${activeTab === tab.id
+          ? 'bg-blue-600 text-white'
+          : ' text-gray-400 hover:text-blue-400'
+        }`}
+    >
+      {tab.label}
+    </button>
+  ))}
+</div>
         
         {/* Projects Grid */}
         <motion.div 
@@ -204,13 +204,13 @@ export default function Projects() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
-                className="bg-gray-50 dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ y: -5 }}
               >
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-bold text-white">
                   {project.title}
                 </h3>
-                <p className="mt-2 text-gray-600 dark:text-gray-300">
+                <p className="mt-2 text-gray-300">
                   {project.description}
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
@@ -229,7 +229,7 @@ export default function Projects() {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+                className=" text-gray-300 hover:text-blue-400"
               >
                 <FaGithub size={20} />
               </a>
@@ -239,7 +239,7 @@ export default function Projects() {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
+                className=" text-gray-300 hover:text-blue-400"
               >
                 <FaExternalLinkAlt size={20} />
               </a>

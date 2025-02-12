@@ -30,7 +30,7 @@ export default function About() {
     <section id="about" className="py-20 bg-gray-800">
       <div className="max-w-[80%] mx-auto">
         <motion.h2 
-          className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12"
+          className="text-3xl font-bold text-center text-blue-400 mb-12"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -41,7 +41,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-6">
           {/* Sidebar Navigation */}
           <div className="md:w-[200px]">
-            <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-3">
+            <div className="bg-gray-900 text-white rounded-lg p-3">
               {tabs.map((tab, index) => (
                 <motion.button
                   key={tab.id}
@@ -75,7 +75,7 @@ export default function About() {
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 exit={{ opacity: 0, x: -20, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
-                className="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg"
+                className="bg-gray-900 rounded-lg p-6 shadow-lg"
               >
                 {activeTab === 'about' && <AboutContent />}
                 {activeTab === 'experience' && <ExperienceContent />}
@@ -106,7 +106,7 @@ function AboutContent() {
       }}
     >
       <motion.h3 
-        className="text-2xl font-bold text-gray-900 dark:text-white"
+        className="text-2xl font-bold text-white"
         variants={{
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0 }
@@ -122,7 +122,7 @@ function AboutContent() {
           visible: { opacity: 1, y: 0 }
         }}
       >
-        <p className="text-gray-600 dark:text-gray-300">
+        <p className="text-gray-400">
           I&apos;m a passionate Full Stack Developer with a strong foundation in web technologies
           and a keen eye for creating user-friendly applications.
         </p>
@@ -134,7 +134,7 @@ function AboutContent() {
           visible: { opacity: 1, y: 0 }
         }}
       >
-        <h4 className="font-semibold text-gray-900 dark:text-white mb-3">
+        <h4 className="font-semibold text-white mb-3">
           My expertise includes:
         </h4>
         <div className="grid grid-cols-2 gap-4">
@@ -146,13 +146,13 @@ function AboutContent() {
           ].map((skill, index) => (
             <motion.div
               key={skill}
-              className="bg-gray-50 dark:bg-gray-600 p-4 rounded-lg"
+              className="bg-gray-600 p-4 rounded-lg"
               whileHover={{ scale: 1.05, backgroundColor: '#3B82F6' }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <span className="text-gray-700 dark:text-gray-200">{skill}</span>
+              <span className="text-gray-200">{skill}</span>
             </motion.div>
           ))}
         </div>
@@ -197,7 +197,7 @@ function ExperienceContent() {
       {experiences.map((exp, index) => (
         <motion.div
           key={index}
-          className="bg-gray-50 dark:bg-gray-600 p-6 rounded-lg"
+          className="bg-gray-900 p-6 rounded-lg"
           variants={{
             hidden: { opacity: 0, y: 20 },
             visible: { opacity: 1, y: 0 }
@@ -206,7 +206,7 @@ function ExperienceContent() {
           transition={{ duration: 0.2 }}
         >
           <motion.h3 
-            className="text-xl font-bold text-gray-900 dark:text-white"
+            className="text-xl font-bold text-white"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -222,7 +222,7 @@ function ExperienceContent() {
             <p className="text-gray-500 dark:text-gray-400 text-sm">{exp.period}</p>
           </motion.div>
           <motion.p 
-            className="text-gray-600 dark:text-gray-300 mt-2"
+            className="text-gray-400 mt-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
@@ -281,7 +281,7 @@ function EducationContent() {
       {education.map((edu, index) => (
         <motion.div
           key={index}
-          className="bg-gray-50 dark:bg-gray-600 p-6 rounded-lg"
+          className="bg-gray-900 p-6 rounded-lg"
           variants={{
             hidden: { opacity: 0, y: 20 },
             visible: { opacity: 1, y: 0 }
@@ -290,7 +290,7 @@ function EducationContent() {
         >
           <motion.div className="space-y-3">
             <motion.h3 
-              className="text-xl font-bold text-gray-900 dark:text-white"
+              className="text-xl font-bold text-white"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
