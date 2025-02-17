@@ -19,9 +19,9 @@ const AdBanner = ({
       ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push(
         {}
       );
-       // eslint-disable-next-line @typescript-eslint/no-explicit-any
+       // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
     } catch (error:any) {
-      console.log(error);
+      
     }
   }, []);
 
