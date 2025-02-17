@@ -15,11 +15,13 @@ const AdBanner = ({
 }: AdBannerTypes) => {
   useEffect(() => {
     try {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push(
         {}
       );
-    } catch (error: any) {
-      console.log(error.message);
+       // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (error:any) {
+      console.log(error);
     }
   }, []);
 
