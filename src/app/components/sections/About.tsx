@@ -41,6 +41,8 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-6">
           {/* Sidebar Navigation */}
           <div className="md:w-[200px]">
+            
+          
             <div className="bg-gray-900 text-white rounded-lg p-3">
               {tabs.map((tab, index) => (
                 <motion.button
