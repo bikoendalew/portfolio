@@ -128,7 +128,7 @@ export default function Contact() {
                                     htmlFor="name"
                                     className="block text-sm font-medium text-gray-300"
                                 >
-                                    Name
+                                    Full_Name
                                 </label>
                                 <input
                                     type="text"
