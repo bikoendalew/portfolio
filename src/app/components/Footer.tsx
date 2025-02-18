@@ -20,7 +20,7 @@ export default function Footer() {
           },
           {
             icon: <FaFacebook size={24} />,
-            url: "https://facebook.com/yourusername",
+            url: "https://www.facebook.com/biruk.biko",
             color: "hover:border-blue-700 hover:text-blue-700",
           },
       ];
